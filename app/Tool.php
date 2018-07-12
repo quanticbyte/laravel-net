@@ -15,7 +15,7 @@ class Tool extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'model', 'image_url','state','employee_id','company','company_id','is_active','serial_number'];
+    protected $fillable = ['name', 'model', 'image_url','state','employee_id','company_id','is_active','serial_number'];
 
     /**
      * The attributes that should be hidden for arrays.
