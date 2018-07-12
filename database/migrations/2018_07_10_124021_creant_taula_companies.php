@@ -22,8 +22,8 @@ class CreantTaulaCompanies extends Migration
             $table->string('contact_mail',100);
             $table->string('contact_name',100);
             $table->string('admin_name',50);
-            $table->smallInteger('contact_tel');
-            $table->string('logo',255);
+            $table->string('contact_tel',32);
+            $table->string('logo',255)->nullable();
             $table->timestamp('data_alta')->useCurrent();
             $table->timestamp('data_baixa')->nullable();
             $table->timestamps();

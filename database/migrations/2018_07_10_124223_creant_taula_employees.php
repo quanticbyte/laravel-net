@@ -20,7 +20,7 @@ class CreantTaulaEmployees extends Migration
             $table->string('id_op_empresa',100);
             $table->string('firstname',100);
             $table->string('lastname',100);
-            $table->smallInteger('phone');
+            $table->string('phone',32);
             $table->timestamps();
         });
     }

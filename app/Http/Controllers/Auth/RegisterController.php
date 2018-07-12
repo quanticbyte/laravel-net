@@ -67,7 +67,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'api_token' => bcrypt($data['email']),
+            'api_token' => bcrypt($data['email']), //<----- canviar per forma de app
         ]);
     }
 }
