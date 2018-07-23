@@ -18,3 +18,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//rutas web
+Route::get('admin','HomeController@adminView')->middleware('auth:web');
+Route::get('magatzem','HomeController@magatzemView')->middleware('auth:web');
+Route::get('employee','HomeController@employeeView')->middleware('auth:web');
+//pagina per la creacio de noves empreses
+Route::get('superadmin','HomeController@superadminView')->middleware('auth:web');
+
+
+Route::post('newcompany','CompaniesController@newcompanyB')->middleware('auth:web');
